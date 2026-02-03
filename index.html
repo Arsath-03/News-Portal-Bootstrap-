@@ -1,82 +1,90 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daily News Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>News Portal - Bootstrap</title>
-
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body class="bg-light">
-
-    
-    <header class="bg-dark text-white text-center py-4">
-        <h1 class="mb-0">Daily News Portal</h1>
-        <p class="mb-0">Your trusted news source</p>
-    </header>
-
-    
-    <div class="bg-danger text-white text-center fw-bold py-2">
-        Breaking News: Major global events unfolding today!
-    </div>
-
-    
-    <nav class="navbar navbar-expand-sm navbar-dark bg-warning">
-        <div class="container justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white fw-bold" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white fw-bold" href="world.html">World News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white fw-bold" href="sports.html">Sports</a>
-                </li>
-            </ul>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Daily News</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="world.html">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sports.html">Sports</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    
-    <div class="container my-4">
-        <div class="row g-4">
-
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Technology</h3>
-                        <p class="card-text">
-                            New innovations are shaping the digital world.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Business</h3>
-                        <p class="card-text">
-                            Markets show mixed reactions amid policy changes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="bg-danger text-white text-center py-2 fw-bold">
+      Breaking News: Major global events unfolding today
     </div>
 
-    
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">&copy; 2026 Daily News Portal</p>
+    <div class="container my-5">
+      <div class="bg-dark text-white p-5 rounded shadow text-center">
+        <h1 class="fw-bold">Daily News Portal</h1>
+        <p class="lead mb-0">Your trusted source for global updates</p>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2 class="text-center fw-bold mb-4">Latest Categories</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">Technology</span>
+              <h4 class="card-title">Digital Innovations</h4>
+              <p class="card-text">
+                New technologies are reshaping the digital world and modern
+                industries.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Business</span>
+              <h4 class="card-title">Market Insights</h4>
+              <p class="card-text">
+                Markets react as new economic and financial policies are
+                introduced.
+              </p>
+              <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="fw-bold mb-1">Daily News Portal</p>
+      <p class="small mb-0">&copy; 2026 All Rights Reserved</p>
     </footer>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
